@@ -52,7 +52,7 @@ for url in urls:
     except:
         print("No live:", url)
         live_links.append(None)
-l = l+1
+    l = l+1
 
 driver.quit()
 
@@ -154,5 +154,6 @@ threading.Thread(target=start_server, daemon=True).start()
 # =========================
 driver = webdriver.Chrome()   # ❗ NOT headless
 driver.get(f"http://localhost:{PORT}")
+driver.maximize_window()
 
 input("Press Enter to stop everything...")

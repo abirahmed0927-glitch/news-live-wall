@@ -1,0 +1,41 @@
+## Requirements
+selenium>=4.15.0
+webdriver-manager>=4.0.1
+
+## Usage Guide
+1️⃣ Clone the Repository
+git clone https://github.com/your-username/yt-live-news-grid.git
+cd yt-live-news-grid
+
+2️⃣ Create & Activate Virtual Environment (Recommended)
+Windows
+python -m venv venv
+venv\Scripts\activate
+
+Linux / macOS
+python3 -m venv venv
+source venv/bin/activate
+
+3️⃣ Install Dependencies
+pip install -r requirements.txt
+
+4️⃣ Run the Script
+python main.py
+
+5️⃣ Headless Mode (Optional)
+from selenium.webdriver.chrome.options import Options
+options = Options()
+options.add_argument("--headless=new")
+
+6️⃣ Customize Channels
+urls = [
+    "https://www.youtube.com/@somoynews360/streams",
+    "https://www.youtube.com/@JamunaTVbd/streams",
+    "https://www.youtube.com/@channel24digital/streams"
+]
+
+## Requirements
+
+Google Chrome installed
+Stable internet connection
+Python 3.9+
